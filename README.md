@@ -1,10 +1,6 @@
 # Image Denoiser using Neural Networks
 
 <!-- Project ID for reference -->
-<p align="right"><b>Project ID:</b> IMG-DN-001</p>
-
-## 🛠️ Tech Stack
-
 <p align="center">
   <a href="https://www.python.org/" target="_blank">
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
