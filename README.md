@@ -1,10 +1,35 @@
 # Image Denoiser using Neural Networks
 
+<!-- Project ID for reference -->
+<p align="right"><b>Project ID:</b> IMG-DN-001</p>
+
+## 🛠️ Tech Stack
+
+<p align="center">
+  <a href="https://www.python.org/" target="_blank">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  </a>
+  <a href="https://www.tensorflow.org/" target="_blank">
+    <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow"/>
+  </a>
+  <a href="https://numpy.org/" target="_blank">
+    <img src="https://img.shields.io/badge/Numpy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
+  </a>
+  <a href="https://matplotlib.org/" target="_blank">
+    <img src="https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white" alt="Matplotlib"/>
+  </a>
+  <a href="https://jupyter.org/" target="_blank">
+    <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter"/>
+  </a>
+</p>
+
+---
+
 A deep learning implementation for removing noise from fashion images using a custom autoencoder architecture built with TensorFlow v1.
 
 ## Overview
 
-This project implements an image denoising system that takes noisy fashion images and reconstructs clean versions using a neural network trained on the Fashion-MNIST dataset. The system artificially introduces Gaussian noise to clean images during training and learns to map noisy inputs back to their original clean state.
+This project implements an image denoising system that takes noisy fashion images and reconstructs clean versions using a neural network trained on the Fashion-MNIST dataset. The system artificially i[...]
 
 ## Technical Architecture
 
@@ -117,7 +142,7 @@ L = (1/N) Σ ||x - f(y)||²
 
 ### Training Results Analysis
 
-The training demonstrates convergence from an initial loss of ~3688 to ~1945 over 100 epochs, indicating the network successfully learned to denoise fashion images. The symmetric architecture with a 32-neuron bottleneck forces the model to learn compact representations while maintaining reconstruction quality.
+The training demonstrates convergence from an initial loss of ~3688 to ~1945 over 100 epochs, indicating the network successfully learned to denoise fashion images. The symmetric architecture with a 3[...]
 
 ### Performance Characteristics
 
@@ -133,7 +158,7 @@ The training demonstrates convergence from an initial loss of ~3688 to ~1945 ove
 
 ### Technical Implementation Notes
 
-The code utilizes TensorFlow v1's computational graph paradigm with explicit session management. The architecture design follows classical autoencoder principles with symmetric encoder-decoder structure, making it suitable for understanding fundamental denoising concepts while maintaining computational efficiency.
+The code utilizes TensorFlow v1's computational graph paradigm with explicit session management. The architecture design follows classical autoencoder principles with symmetric encoder-decoder structu[...]
 
 ## Model Visualization
 
@@ -141,5 +166,3 @@ The final visualization shows three rows:
 1. **Original Images**: Clean fashion items from test set
 2. **Noisy Images**: Same items with added Gaussian noise
 3. **Denoised Output**: Network reconstruction results
-
-This comparison demonstrates the model's capability to recover underlying image structure despite significant noise corruption.
