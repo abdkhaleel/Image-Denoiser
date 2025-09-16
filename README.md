@@ -30,11 +30,13 @@ graph LR
     C --> D[Dense: 32]
     D --> E[Dense: 256]
     E --> F[Output: 784]
-    
-    style A fill:#e1f5fe
-    style F fill:#e8f5e8
-    style C fill:#fff3e0
-    style D fill:#fff3e0
+
+    style A fill:#d4edda,color:#155724
+    style F fill:#d4edda,color:#155724
+    style C fill:#fff3cd,color:#856404
+    style D fill:#fff3cd,color:#856404
+    style B fill:#cce5ff,color:#004085
+    style E fill:#cce5ff,color:#004085
 ```
 
 ### Key Components
